@@ -1,3 +1,4 @@
+//function to find the area of ​​a rectangle
 function area(){
 
     let n1 = document.getElementById('n1').value;
@@ -9,6 +10,8 @@ function area(){
 
     //console.log(resultado);
 }
+
+//function to find the average mark of a student
 function media(){
 
     let n1b = document.getElementById('n1b').value;
