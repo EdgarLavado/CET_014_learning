@@ -1,3 +1,4 @@
+//function to find the average of three marks of a student and return their final mark
 function calcMedia(){
     let nome = document.getElementById('nome').value;
 
@@ -17,8 +18,9 @@ function calcMedia(){
 
     document.getElementById('resNome').innerHTML = "Nome do Aluno: "+nome;
     document.getElementById('resMedia').innerHTML = "Média das Notas: "+media+" valores | "+txt;
- 
 }
+
+//function to find the average velocity of a given car
 function calcVelocidadeMedia(){
     let distancia = document.getElementById('distancia').value;
     let tempo = document.getElementById('tempo').value;
@@ -37,7 +39,6 @@ function calcVelocidadeMedia(){
     }
 
     document.getElementById('resVelocidadeMedia').innerHTML = "A Velocidade Média foi: "+velocidade+" km/h | "+txt;
- 
 }
 
 var matriculas = new Array();
@@ -46,6 +47,7 @@ var kmpercorridosA = new Array();
 let totalPer = 0;
 var outputHTML ="";
 
+//function to register a vehicle
 function registarVeiculos(){
     let matricula = document.getElementById('matricula').value;
     let marca = document.getElementById('marca').value;
@@ -64,7 +66,7 @@ function registarVeiculos(){
       kmpercorridosA.push(kmpercorridos);
     }
   
-      alert("Carro registado.")
+    alert("Carro registado.")
 
     for (var i = 0; i < matriculas.length; i++) {
         matriculas[i];
@@ -74,9 +76,9 @@ function registarVeiculos(){
       document.getElementById('resListar').innerHTML = "O veículo de matricula: "+matricula+" da marca : "+marca+" tem: "+kmpercorridos+"km percorridos";
       
       } 
-
 }
 
+//function to list all registed vehicles
 function listarVeiculos(){
 
   outputHTML += "<table>";
@@ -92,7 +94,6 @@ function listarVeiculos(){
         */
     outputHTML += "</tr>";
      
-      
       //document.getElementById('resListar').innerHTML = "O veículo de matricula: "+matriculas[i]+" da marca : "+marcas[i]+" tem: "+kmpercorridosA[i]+"km percorridos";
       } 
       outputHTML += "</table>";
@@ -105,6 +106,4 @@ function listarVeiculos(){
   }
   
   document.getElementById('resTotalKm').innerHTML = " Total de Km percorridos pelos veículos: "+totalPer+" km. ";
-
-
 }
