@@ -78,7 +78,7 @@ function registarVeiculos(){
       } 
 }
 
-//function to list all registed vehicles
+//function to list all registed vehicles and the total of km they ran
 function listarVeiculos(){
 
   outputHTML += "<table>";
