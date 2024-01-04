@@ -20,7 +20,7 @@ function calcMedia(){
     document.getElementById('resMedia').innerHTML = "Média das Notas: "+media+" valores | "+txt;
 }
 
-//function to find the average velocity of a given car
+//function to find the average velocity of a given car and classify it
 function calcVelocidadeMedia(){
     let distancia = document.getElementById('distancia').value;
     let tempo = document.getElementById('tempo').value;
