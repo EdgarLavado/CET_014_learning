@@ -3,6 +3,7 @@
     let descricaos = [];
     let precos = [];
 
+//function to register a product
 function registarProdutos(){
 
         ids[ids.length] = document.getElementById('id').value;
@@ -19,12 +20,9 @@ function registarProdutos(){
             txt += '<td>'+precos[i]*1.23+'</td>';
             txt += '</tr>';
 
-    
         }
 
         document.getElementById('listaProdutos').innerHTML = txt;
-
-
 }
 
 
@@ -34,7 +32,7 @@ let matriculas = [];
 let consumos = [];
 let kms = [];
 
-
+//function to register a vehicle
 function registarVeiculos(){
    
     marcas[marcas.length] = document.getElementById('marca').value;
@@ -43,7 +41,6 @@ function registarVeiculos(){
     consumos[consumos.length] = document.getElementById('consumo').value;
     kms[kms.length] = document.getElementById('km').value;
     
-
     let txt="";
     let total = 0;
     let totalC = 0;
@@ -66,7 +63,7 @@ function registarVeiculos(){
 
 }
 
-    /*
-    estou a usar datalist o mais correto seria un select, a diferença entre as tags é que a datalist é uma sugestão(o utilizador pode inserir o que quiser)
-    o select obriga o utilizador a escolher uma das opcões
-    */
+/*
+I'm using datalist, the most correct would be un select, the difference between the tags is that the datalist is a suggestion (the user can insert whatever they want)
+select forces the user to choose one of the options
+*/
