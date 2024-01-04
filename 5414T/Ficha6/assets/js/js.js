@@ -4,7 +4,7 @@ let derrotas = [];
 let ids = [];
 let contar = 0;
 
-
+//function to register a team
 function regEquipa(){
 
     if(contar < 5){
@@ -31,6 +31,7 @@ function regEquipa(){
     }
 }
 
+//function to edit a team
 function editEquipas(posicao){
 
     document.getElementById('nome').value = nomes[posicao];
@@ -42,6 +43,7 @@ function editEquipas(posicao){
 
 }
 
+//function to save the changes made to a team
 function guardaEditEquipas(posicao){
 
     vitorias[posicao] = document.getElementById('numVitorias').value;
@@ -53,6 +55,7 @@ function guardaEditEquipas(posicao){
 
 }
 
+//function to list all the team
 function getLista(){
     let msg = "";
 
@@ -69,7 +72,7 @@ function getLista(){
     document.getElementById('listaEquipas').innerHTML = msg;
 }
 
-
+//function to show the classification of 
 function mostraClassificacao(){
     let msg = "";
 
@@ -86,7 +89,7 @@ function mostraClassificacao(){
 
 }
 
-
+//function to display a alert with a message
 function sucesso(msg){
 
     alert(msg);
