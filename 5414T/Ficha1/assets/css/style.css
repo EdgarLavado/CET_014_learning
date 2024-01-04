@@ -1,0 +1,128 @@
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.about{
+    color: gray;
+    font-size: 15px;
+}
+
+h1, h5{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+/*
+!important (usado para prioridade ao elemento que é associado)
+*/
+
+.services{
+    width: 150px;
+}
+
+.logo{
+    width: 60%;
+}
+
+.imgcontacts{
+    width: 60%;
+    align-items: center;
+}
+
+.contacttext{
+    color: blue;
+}
+
+#service1{
+    color: red;
+}
+
+#service2{
+    color: aqua;
+}
+
+#service3{
+    color: green;
+}
+
+.menu{
+    color: yellow;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#homepagetext{
+    font-family: papyrus;
+    font-size: 17px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: blue;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: green;
+  }
+
+  .size100{
+      width: 100%;
+  }
+
+  .div1{
+      width: 100%;
+  }
+
+  .centerText{
+      text-align: center;
+  }
+/*
+  {
+    box-sizing: border-box;
+  }
+  */
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  table, td, th{
+      border: 1px solid black;
+  }
+
+  

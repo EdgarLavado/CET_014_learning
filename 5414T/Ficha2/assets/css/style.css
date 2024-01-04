@@ -1,0 +1,82 @@
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  table, td, th{
+      border: 1px solid black;
+  }
+
+  caption{
+      background-color: red;
+      color: white;
+      border: 1px solid black;
+  }
+
+  .align{
+      text-align: center;
+  }
+
+  .mes{
+      color: #24589c;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+.textinp{
+    width: 40%;
+}
+
+.numinp{
+    width: 5%;
+}
+
+.telinp{
+    width: 30%;
+}
+
+.emailinp{
+    width: 35%;
+}
+
+.table2{
+    text-align: center;
+    width: 100%;
+}
+
+.thempty{
+ background: purple;
+}
+
+.thheader{
+    background: green;
+    color: white;
+    border-color: white;
+}
+
+.tdname{
+    background: aqua;
+    color: white;
+    border-color: white;
+}
+
+.tdempty{
+    background: gray;
+    text-emphasis: strong;
+    border: 2px solid black;
+}
+
+.tdfull{
+    background: blue;
+    color: white;
+    border-color: white;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div>
+        <h2>Exercício 1</h2>
+        <form>
+            <label for="nome">Insira o nome da Equipa</label>
+            <input type="text" id="nome"><br><br>
+            <label for="numVitorias">Insira o número de vitórias:</label>
+            <input type="number" id="numVitorias"><br><br>
+            <label for="numDerrotas">Insira o número de derrotas:</label>
+            <input type="number" id="numDerrotas"><br><br>
+            <label for="classificacao">Escolha uma classificação:</label>
+            <select id ="classificacao">
+                <option value='-1'>Escolha uma opção</option>
+                <option value='0'>1º Classificado </option>
+                <option value='1'>2º Classificado</option>
+                <option value='2'>3º Classificado</option>
+                <option value='3'>4º Classificado</option>
+                <option value='4'>5º Classificado</option>
+            </select><br><br>
+
+            <button type="button" onclick="regEquipa()">Guardar</button>
+            <button type="button" id="btnEdit">Guardar Edição</button>
+
+            <button type="button" onclick="mostraClassificacao()">Classificação</button>
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Número de Vitórias</th>
+                    <th>Número de Derrotas</th>
+                    <th>Número de Derrotas</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody id = "listaEquipas">
+
+            </tbody>
+        </table>
+
+
+
+        <script src="assets/js/js.js"></script>
+    </div>
+</body>
+</html>

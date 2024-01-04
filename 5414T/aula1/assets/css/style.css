@@ -1,0 +1,26 @@
+h1{
+    color: red;
+}
+
+p{
+    color: gray;
+    text-align: justify;
+}
+
+img{
+    width: 50%;
+}
+
+div{
+    width: 100%;
+    background-color: aqua;
+}
+
+.divVerde{
+    width: 80%;
+    background-color: greenyellow;
+}
+
+#h1verde{
+    color: green;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div>
+        <h2>Exercicio 1</h2>
+        <form>
+            <label for="id">Insira o Id do produto: </label>
+            <input type="number" id="id"><br><br>
+
+            <label for="nome">Insira o Nome do produto:</label>
+            <input type="text" id="nome"><br><br>
+
+            <label for="descricao">Insira a Descrição do Produto: </label>
+            <input type="text" id="descricao"><br><br>
+
+            <label for="preco">Insira o Preço sem Iva do produto: </label>
+            <input type="number" id="preco"><br><br>
+
+            <button type="button" onclick="registarProdutos()">Registar</button><br>
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Preco Sem IVA</th>
+                    <th>Preco Com IVA</th>
+                </tr>
+            </thead>
+            <tbody id = 'listaProdutos'>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div>
+        <h2>Exercicio 2</h2>
+        <form>
+            <label for="marca">Insira a Marca: </label>
+            <input list="cars" name="marca" id="marca"><br><br>            
+            <datalist id="cars">
+              <option value="Skoda"/>
+              <option value="Audi"/>
+              <option value="Mazda"/>
+              <option value="Jeep"/>
+              <option value="Dacia"/>
+            </datalist>
+        
+            <label for="modelo">Insira o Modelo: </label>
+            <input type="text" id="modelo"><br><br>
+
+            <label for="matricula">Insira a Matricula: </label>
+            <input type="text" id="matricula"><br><br>
+
+            <label for="consumo">Insira o consumo: </label>
+            <input type="number" id="consumo"><br><br>
+
+            <label for="km">Insira a kilometragem: </label>
+            <input type="number" id="km"><br><br>
+
+            <button type="button" onclick="registarVeiculos()">Registar</button><br>
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Matricula</th>
+                    <th>Consumo</th>
+                    <th>Kilometragem</th>
+                </tr>
+            </thead>
+            <tbody id = 'listaVeiculos'>
+            </tbody>
+        </table>
+
+        <p id="resTotalKms"></p>
+
+    </div>
+
+
+
+    <script src="assets/js/js.js"></script>
+    
+</body>
+</html>

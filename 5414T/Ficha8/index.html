@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha8</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div>
+        <h2>Registo de Cliente</h2>
+        <form>
+            <label for="nifCliente">Introduza o nif do Cliente:</label>
+            <input type="number" id="nifCliente"><br><br>
+            <label for="nomeCliente">Introduza o nome do Cliente:</label>
+            <input type="text" id="nomeCliente"><br><br>
+            <label for="emailCliente">Introduza o email do Cliente:</label>
+            <input type="email" id="emailCliente"><br><br>
+            <label for="moradaCliente">Introduza a morada do Cliente:</label>
+            <input type="text" id="moradaCliente"><br><br>
+
+            <button type="button" onclick="registarCliente()">Registar</button>
+            <br>
+            <label for="cliente" onchange="getDadosCliente(this.value)">Escolha o cliente</label>
+            <select id ="cliente">
+        </form>
+        <h2>Atualizar Cliente</h2>
+        <form>
+            <label for="cliente" onchange="getCliente(this.value)">Escolha o cliente</label>
+            <select id ="cliente">
+
+        </form>
+
+    </div>
+
+    <div>
+        <h2>Registo de Produto</h2>
+        <form>
+            <label for="refProduto">Introduza a referência do Produto:</label>
+            <input type="number" id="refProduto"><br><br>
+            <label for="nomeProduto">Introduza o nome do Produto:</label>
+            <input type="text" id="nomeProduto"><br><br>
+            <label for="precoSemIva">Introduza o preço sem Iva:</label>
+            <input type="number" id="precoSemIva"><br><br>
+
+            <button type="button" onclick="registarProduto()">Registar</button>
+            <br>
+            <label for="produto" onchange="getProduto(this.value)">Escolha o produto</label>
+            <select id ="produto">
+        </form>
+
+    </form>
+    <h2>Atualizar Produto</h2>
+    <form>
+        <label for="produto" onchange="getProduto(this.value)">Escolha o produto</label>
+        <select id ="produto">
+
+    </form>
+    </div>
+
+    <div>
+        <h2>Orçamento</h2>
+        <form>
+            <label for="cliente" onchange="getCliente(this.value)">Escolha o cliente</label>
+            <select id ="cliente">
+            </select><br><br>
+            <label for="quantidadeProduto">Introduza a quantidade:</label>
+            <input type="number" id="quantidadeProduto"><br><br>
+            <label for="produto" onchange="getProduto(this.value)">Escolha o produto</label>
+            <select id ="produto">
+            </select><br><br>
+
+            <button type="button" onclick="registarOrcamento()">Registar</button>
+
+        </form>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/function.js"></script>
+</body>
+</html>

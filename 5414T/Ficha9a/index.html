@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha9Alternativa</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div>
+        <h2>Registo de Evento:</h2>
+        <form>
+            <label for="refEvento">Número de registo:</label>
+            <input type="number" id="refEvento"><br><br>
+            <label for="nomeEvento">Nome do Evento:</label>
+            <input type="text" id="nomeEvento"><br><br>
+            <label for="localEvento">Local do Evento:</label>
+            <input type="text" id="localEvento"><br><br>
+            <label for="latitudeEvento">Latitude do Evento:</label>
+            <input type="text" id="latitudeEvento"><br><br>
+            <label for="longitudeEvento">Longitude do Evento:</label>
+            <input type="text" id="longitudeEvento"><br><br>
+            <label for="horarioInicoEvento">Inicio do Evento:</label>
+            <input type="time" id="horarioInicoEvento"><br><br>
+            <label for="horarioFimEvento">Fim do Evento:</label>
+            <input type="time" id="horarioFimEvento"><br><br>
+            <label for="listaTipoMusica">Evento:</label>
+            <select id="listaTipoMusica">
+            </select><br><br>
+
+            <button type="button" onclick="registarEvento()">Registar</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Registo de Banda:</h2>
+        <form>
+            <label for="codigoBanda">Código da Banda:</label>
+            <input type="number" id="codigoBanda"><br><br>
+            <label for="nomeBanda">Nome da Banda::</label>
+            <input type="text" id="nomeBanda"><br><br>
+            <label for="listaTipoMusicaFilter">Tipo de Música:</label>
+            <select id="listaTipoMusicaFilter">
+            </select><br><br>
+
+            <button type="button" onclick="registarBanda()">Registar</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Alinhamento de Bandas para o Evento:</h2>
+        <form>
+            <!--
+            <label for="listaBanda">Banda:</label>
+            <select id="listaBanda">
+
+            </select><br><br>
+            <label for="listaEvento">Evento:</label>
+            <select id="listaEvento">
+
+            </select><br><br>
+
+            <table>
+                <thead>
+                    <tr>
+                    <th>Ref</th>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Sim/Não</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaProdutos">
+
+                </tbody>
+            </table>
+
+            <br><br>
+
+            <button type="button" onclick="registarAlinhamento()">Registar</button>
+
+            <button type="button" onclick="validarCheck()">Validar</button>
+        </form>
+
+        <br><br>
+        -->
+        <select id="listaEventoFilter" onchange="filtrarEventos(this.value)">
+
+        </select><br><br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome da Banda</th>
+                    <th>Tipo </th>
+                    <th>S/N</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaBandas">
+                
+            </tbody>
+        </table>
+
+        <button type="button" onclick="validarCheck()">Validar</button>
+
+        </form>
+    </div>
+
+    <div>
+        <h2>Registo de Espectador:</h2>
+        <form>
+            <label for="listaEventoSelecter">Evento:</label>
+            <select id="listaEventoSelecter"></select>
+            <br><br>
+
+            <label for="nifEspectadorEdit">Nif do Espectador:</label>
+            <input type="number" id="nifEspectadorEdit"><br><br>
+            <label for="nomeEspectadorEdit">Nome do Espectador:</label>
+            <input type="text" id="nomeEspectadorEdit"><br><br>
+            <label for="telemovelEspectadorEdit">Telémovel do Espectador:</label>
+            <input type="tel" id="telemovelEspectadorEdit"><br><br>
+            <label for="emailEspectadorEdit">Email do Espectador:</label>
+            <input type="email" id="emailEspectadorEdit"><br><br>
+
+            <button type="button" onclick="registarEspectador()">Registar</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Editar Espectador:</h2>
+        <form>
+            <label for="listaEventoEditor">Evento:</label>
+            <select id="listaEventoEditor" onchange="filtrarEspectadores(this.value)">
+
+            </select><br><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Nif</th>
+                        <th>-----</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaEspectadores">
+                    
+                </tbody>
+            </table>
+            <br><br>
+
+            <label for="nifEspectadorEdit">Nif do Espectador:</label>
+            <input type="number" id="nifEspectadorEdit"><br><br>
+            <label for="nomeEspectadorEdit">Nome do Espectador:</label>
+            <input type="text" id="nomeEspectadorEdit"><br><br>
+            <label for="telemovelEspectadorEdit">Telémovel do Espectador:</label>
+            <input type="tel" id="telemovelEspectadorEdit"><br><br>
+            <label for="emailEspectadorEdit">Email do Espectador:</label>
+            <input type="email" id="emailEspectadorEdit"><br><br>
+
+            <button type="button" id="btnEditProduto">Registar</button>
+        </form>
+    </div>
+
+    
+</body>
+<footer>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/function.js"></script>
+</footer>
+</html>

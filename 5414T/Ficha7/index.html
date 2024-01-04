@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha 7</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div>
+        <h2>Registo de Aluno</h2>
+        <label for="nifAluno">Insira o seu Número de Informação fiscal:</label>
+        <input type="number" id="nifAluno"><br><br>
+        <label for="nomeAluno">Insira o seu Nome:</label>
+        <input type="text" id="nomeAluno"><br><br>
+        <label for="moradaAluno">Insira a sua Morada:</label>
+        <input type="text" id="moradaAluno"><br><br>
+        <label for="idadeAluno">Insira a sua Idade:</label>
+        <input type="number" id="idadeAluno" ><br><br>
+        <!--onchange="validaIdade()"--> 
+        <label for="telAluno">Insira o seu telefone:</label>
+        <input type="tel" id="telAluno"><br><br>
+        <label for="listaWorkshop">Escolha o seu Workshop:</label>
+        <select id="listaWorkshop">
+            <option value="-1">Escolha uma opção</option>
+            <option value="0">HTML</option>
+            <option value="1">Java</option>
+            <option value="2">C#</option>
+            <option value="3">Php</option>
+        </select>
+        <br><br>
+        <button type="button" onclick="registaAluno()">Registar</button>
+    </div>
+    <hr>
+    <hr>
+    <div>
+        <h2>Listagem de Inscrições:</h2>
+        <button type="button" onclick="getParticipantes()">Listar</button>
+        <table id="tabelaParticipantes"></table>
+    </div>
+    <hr>
+    <hr>
+    <div>
+        <h2>Listagem por Workshop</h2>
+        <form>
+            <label for="listaWorkshopParticipants">Escolha o Workshop:</label>
+            <select id="listaWorkshopParticipants" onchange="getParticipantesByWorkshop(this.value)">
+                <option value="-1">Escolha uma opção</option>
+                <option value="0">HTML</option>
+                <option value="1">Java</option>
+                <option value="2">C#</option>
+                <option value="3">Php</option>
+            </select>
+            <!--<button type="button" onclick="getDados()">Escolher</button>-->
+            <br><br>
+            <table id="tabelaByWorkshop"></table>
+
+        </form>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/function.js"></script>
+</body>
+</html>

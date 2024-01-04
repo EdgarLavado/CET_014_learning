@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correcções do Professor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div>
+        <h2>Registo de Equipa</h2>
+        <label for="nomeEquipa">Insira o nome da Equipa</label>
+        <input type="text" id="nomeEquipa">
+        <button type="button" onclick="registaEquipas()">Registar</button>
+    </div>
+
+    <hr>
+    <div>
+        <h2>Atualização da Classificação</h2>
+    <form>
+        <!--onchange em vez de onclick para quando mudar o valor chamar o método-->
+        <!--o this.value é usado para dar a posição à função neste caso especifico o option value-->
+        <select id="listaEquipas" onchange="getDados(this.value)">
+            <option value="-1">Sem registos</option>
+        </select>
+        <!--<button type="button" onclick="getDados()">Escolher</button>-->
+        <br><br>
+        <label for="vit">Insira as vitórias:</label>
+        <input type="number" id="vit"><br>
+        <label for="der">Insira as derrotas:</label>
+        <input type="number" id="der"><br>
+        <button type="button" id="btnEdit">Guardar</button>
+
+    </form>
+    </div>
+    <hr>
+    <div>
+        <h2>Classificação</h2>
+        <button type="button" onclick="getClassificacao()">Classificação</button>
+        <table id="tabelaClassificacao">
+
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--link a biblioteca de jquery prodution -->
+    <!--<script src="assets/js/jquery.js"></script>-->
+    <!--a de cima para não estar dependente da net-->
+    <script src="assets/js/js.js"></script>
+</body>
+</html>
