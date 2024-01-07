@@ -2,6 +2,7 @@ let listaAlunos = [];
 let workshops = ["HTML","Java","C#","Php"];
 let contar = 0;
 
+//function to register a student, the register is limited to 15 students
 function registaAluno(){
 
     if(contar < 15){
@@ -30,11 +31,11 @@ function registaAluno(){
     }else{
         alert("Erro! Já atingiu o limite de Equipas");
     }
-    
-
 }
 
-/*function validaIdade(idade){
+/*
+//function to check if the student is of age to enroll
+function validaIdade(idade){
     let idade = $('#idadeAluno').val();
 
     if (idade < 16){
@@ -55,6 +56,7 @@ function registaAluno(){
 
 
 */
+//function to list the students
 function getParticipantes(){
 
     let msg = "<thead>";
@@ -86,6 +88,7 @@ function getParticipantes(){
 
 }
 
+//function to list the students by workshop
 function getParticipantesByWorkshop(posicao){
 
     if(posicao === -1){
@@ -123,6 +126,4 @@ function getParticipantesByWorkshop(posicao){
     $('#tabelaByWorkshop').html(msg);
 
     }
-
 }
-
