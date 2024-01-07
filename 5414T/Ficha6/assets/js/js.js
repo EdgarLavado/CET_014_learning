@@ -79,7 +79,7 @@ function mostraClassificacao(){
     for(let i = 0; i < nomes.length; i++){
         msg+="<tr>";
         msg+="<td>"+nomes[i]+"</td>";
-        msg+="<td>"+((vitorias[i]/(Number(vitorias[i]) + Number(derrotas[i]))*100)+"</td>";
+        msg+="<td>"+((vitorias[i]/(Number(vitorias[i]) + Number(derrotas[i]))*100))+"</td>";
         msg+="<td>"+derrotas[i]+"</td>";
         msg+="<td><button type='button' onclick='editEquipas("+i+")'>Editar</button></td>";
         msg+="</tr>";
