@@ -5,6 +5,7 @@ let alinhamento = [];
 let listaEspectadores = [];
 
 /*
+//function to show the registed type of music on the select tag
 function getTipoMusica(){
 
     let txt = "<option value='-1'>Escolha uma opção</option>";
@@ -24,7 +25,7 @@ getTipoMusica();
 getDados(tipoMusica,'listaTipoMusica');
 getDados(tipoMusica,'listaTipoMusica1');
 
-
+//function to register a event
 function registarEvento(){
 
     listaEventos.push([
@@ -44,6 +45,7 @@ function registarEvento(){
     alert("Registo efetuado com sucesso!");
 }
 
+//function to register a band after validation if the band wasnt registed before
 function registarBanda(){
 
     if(!valida($('#codigoBanda').val(),listaBandas,0)){
@@ -61,6 +63,7 @@ function registarBanda(){
     alert("Registo efetuado com sucesso!");
 }
 
+//band code validation
 function valida(codigo,arr,posicao){
 
     let resposta = true;
@@ -76,6 +79,7 @@ function valida(codigo,arr,posicao){
     }
 }
 
+//function to show all the registed bands on the select tag
 function getDados(arr, id){
     let msg = "<option value='-1'>Escolha uma opção</option>";
 
@@ -87,6 +91,7 @@ function getDados(arr, id){
     $('#'+id+'').html(msg);
 }
 
+//function to register the alignment of a event after validation of the band type
 function registarAlinhamento(){
 
     if(!validaAlinhamento($('#listaBanda').val())){
@@ -102,6 +107,7 @@ function registarAlinhamento(){
     alert("Registo efetuado com sucesso!");
 }
 
+//band type validation
 function validaAlinhamento(ref){
 
     let tipo;
@@ -129,10 +135,9 @@ function validaAlinhamento(ref){
         return resposta;
     
     }
-
-
 }
 
+//register a presence at an event
 function registarEspectador(){
 
     listaEspectadores.push([
@@ -148,7 +153,7 @@ function registarEspectador(){
     alert("Registo efetuado com sucesso!");
 }
 
-
+//function to list all the bands at a event
 function listarBandasEvento(codigo){
 
     let msg = "";
